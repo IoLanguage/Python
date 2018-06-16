@@ -1,0 +1,15 @@
+{
+  "name":         "Python",
+  "version":      "0.1",
+  "description":  "This object provides access the world of python.",
+  "author":       "Aslak Gronflaten",
+  "website":      "http://iolanguage.org/",
+  "readme":       "README.md",
+  "protos":       ["Python"],
+  "dependencies": {
+    "libs":     [],
+    "headers":  ["Python.h"],
+    "protos":   [],
+    "packages": []
+  }
+}
