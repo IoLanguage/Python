@@ -10,10 +10,8 @@ AddonBuilder clone do(
         dependsOnHeader("Python.h")
         dependsOnLib("python" .. version)
 
-        if(platform == "darwin",
-            appendHeaderSearchPath("#{pythonPrefix}/include/" interpolate)
-            appendLibSearchPath("#{pythonPrefix}/lib" interpolate)
-        )
+        appendHeaderSearchPath("#{pythonPrefix}/include/" interpolate)
+        appendLibSearchPath("#{pythonPrefix}/lib" interpolate)
         headerSearchPaths foreach(headerSearchPath, appendHeaderSearchPath(headerSearchPath .. "/python" .. version))
         headerSearchPaths foreach(headerSearchPath, appendHeaderSearchPath(headerSearchPath .. "/python" .. version .. "m"))
 
